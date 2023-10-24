@@ -1,0 +1,10 @@
+h1{
+    border: 5px solid blue;
+    border-radius: 10px;
+    color: #ff0000;
+    margin: 10px 20px;
+}
+.navbar{
+    height: 500px;
+    width: 100px;
+}

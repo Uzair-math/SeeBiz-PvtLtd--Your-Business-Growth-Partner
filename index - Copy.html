@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Task 25</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img class="navbar-brand" src="./logo new.svg" alt="" >
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Inventory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Marketplace</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" tabindex="-1">Help Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" tabindex="-1">Blog</a> 
+              </li>
+            </ul>
+            <form class="d-flex align-items-center">
+                <a href="#" class="btn text-white">Sign in</a>
+              <button class="btn btn-outline-success px-4 bg-primary text-dark" type="submit">Create Account</button>
+
+            </form>
+          </div>
+
+          
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="./marketplace.png" alt="" style="width:200px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-flex px-4">
+                <i class="fa-solid fa-bars py-3 text-primary" style="font-size: 20px;"></i>
+                <a class="nav-link active py-2 px-3" style="font-size: 20px;" aria-current="page" href="#">Categories</a>
+                <i class="fa-sharp fa-solid fa-angle-down py-3 px-1"></i>
+              </li>
+              <li class="nav-item d-flex px-2">
+                <i class="fa-solid fa-store py-3 text-primary" style="font-size: 20px;"></i>
+                <!-- <i class="fa-solid fa-bars py-3 text-primary" style="font-size: 20px;"></i> -->
+                <a class="nav-link active py-2 px-3" style="font-size: 20px;" aria-current="page" href="#">Vender</a>
+                <i class="fa-sharp fa-solid fa-angle-down py-3 px-1"></i>
+              </li>
+              <div class="icons">
+              <input class="form-control me-2" style="width: 600px; margin-top:3px; margin-left:13px;" type="search" placeholder="Search" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass" style="position:relative; bottom: 48%; left:93%; border-left: 2px solid black; padding-left: 10px;"></i>
+            </div>
+                        </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success px-4 bg-success text-white" type="submit">Sell on Seebiz</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- ###################### sec1 ###################  -->
+      <div class="sec1">
+        <div class="row container">
+        <div class="col-6 m-auto">
+            <div class="text2 text-white ">
+                <h1 style="font-size: 60px; line-height: 60px;
+                padding: 0px 5px;">B<sub>2</sub>B Wholesale Marketplace<br>by <strong>SeeBiz</strong></h1>
+                <p style="padding-top: 20px;">The only wholesale marketplace that builds, optimizes,<br>and advertises your
+                    online store.</p>
+                <a href="#" class="bg-white text-primary py-2 px-4 mt-5" style="text-decoration: none;">Learn More</a>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="./banner-image-1.webp" alt="" style="width: 694px; height:100%;">
+        </div>
+    </div>
+    </div>
+
+    <!-- ############## sec2 ################# -->
+
+    <div class="sec2" style="position: relative;">
+        <div class="container-fluid p-5">
+            <!-- <hr><hr> -->
+            <div class="sec2" style="border-bottom: 1px solid gray; border-top:1px solid gray; padding:2px; margin-top:12px;"></div>
+                <div class="sec3text">
+                    <h3 style="position: absolute; top:38%; left: 5%; font-size: 30px; z-index: 1; width: 480px; text-align:center; background-color: white;">TOP WHOLESALE COMPAINIES</h3>
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end px-5 pagination1" style="position: relative;">
+        <ul class="pagination">
+          <li class="page-item pagination1"><a class="page-link bg-white text-dark" href="#">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true" style="width: 30px; height:30px; color:black; position:absolute;bottom:0px; left:0px;"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+             
+          </a></li>
+          <li class="page-item pagination1"><a class="page-link bg-white text-dark" href="#">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark" aria-hidden="true" style="width: 30px; height:30px; color:black; position: absolute; bottom: 0px; right:0px;"></span>
+                <span class="visually-hidden" style="border: 1px solid black;">Next</span>
+              </button>
+          </a></li>
+        </ul>
+    </div>
+
+
+    <!-- ################## slider section ################## -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="position: relative;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="sec4">
+                <div class="container1">
+                    <div class="color">
+                        <div class="card card1">
+                            <div class="card-image">
+                                <img src="./joia.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>JOIA</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <p>Wholesaler of Jewelry & Accessories<br>offering top quality of stylish<br>accessories and
+                                    beauty products</p>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./joia-icons.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <div class="card-image">
+                                <img src="./kiko-wireless.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>KIKO WIRELESS</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <P>Wholesale supplier of cell phone<br>accessories carries innovative, and<br>quality
+                                    products at or below typical...</P>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./kikowireless-icon-1.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card3">
+                            <div class="card-image">
+                                <img src="./knoxville-wholesale-furniture.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>KNOXVILLE WHOLESALE FURNITURE</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <P>Knoxville Wholesale Furniture brings<br>new, unique kind of home and office<br>furniture
+                                    at low prices without...</P>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./knoxvillewholesale-icon.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card4">
+                            <div class="card-image">
+                                <img src="./princess-purse.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>PRINCESS PURSE</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <p>Your one-stop-shop for durable and<br>stylish designer handbags at <br>discounted prices.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./princespurse-icon.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="sec4">
+                <div class="container1">
+                    <div class="color">
+                        <div class="card card1">
+                            <div class="card-image">
+                                <img src="./joia.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>JOIA</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <p>Wholesaler of Jewelry & Accessories<br>offering top quality of stylish<br>accessories and
+                                    beauty products</p>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./joia-icons.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <div class="card-image">
+                                <img src="./kiko-wireless.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>KIKO WIRELESS</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <P>Wholesale supplier of cell phone<br>accessories carries innovative, and<br>quality
+                                    products at or below typical...</P>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./kikowireless-icon-1.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card3">
+                            <div class="card-image">
+                                <img src="./knoxville-wholesale-furniture.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>KNOXVILLE WHOLESALE FURNITURE</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <P>Knoxville Wholesale Furniture brings<br>new, unique kind of home and office<br>furniture
+                                    at low prices without...</P>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./knoxvillewholesale-icon.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card4">
+                            <div class="card-image">
+                                <img src="./princess-purse.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>PRINCESS PURSE</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <p>Your one-stop-shop for durable and<br>stylish designer handbags at <br>discounted prices.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./princespurse-icon.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="sec4">
+                <div class="container1">
+                    <div class="color">
+                        <div class="card card1">
+                            <div class="card-image">
+                                <img src="./joia.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>JOIA</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <p>Wholesaler of Jewelry & Accessories<br>offering top quality of stylish<br>accessories and
+                                    beauty products</p>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./joia-icons.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card2">
+                            <div class="card-image">
+                                <img src="./kiko-wireless.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>KIKO WIRELESS</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <P>Wholesale supplier of cell phone<br>accessories carries innovative, and<br>quality
+                                    products at or below typical...</P>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./kikowireless-icon-1.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card3">
+                            <div class="card-image">
+                                <img src="./knoxville-wholesale-furniture.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>KNOXVILLE WHOLESALE FURNITURE</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <P>Knoxville Wholesale Furniture brings<br>new, unique kind of home and office<br>furniture
+                                    at low prices without...</P>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./knoxvillewholesale-icon.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card4">
+                            <div class="card-image">
+                                <img src="./princess-purse.webp" alt="">
+                            </div>
+                            <div class="card-icon">
+                                <h6>PRINCESS PURSE</h6>
+                                <img src="./group.svg" alt="">
+                                <img src="./group-unverified.svg" alt="">
+                            </div>
+                            <div class="para">
+                                <p>Your one-stop-shop for durable and<br>stylish designer handbags at <br>discounted prices.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="flex">
+                                <div class="flex-img">
+                                    <img src="./princespurse-icon.webp" alt="">
+                                </div>
+                                <div class="flex-para">
+                                    <p>View Profile</p>
+                                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ################## sec5 ############## -->
+      <div class="sec2" style="position: relative;">
+        <div class="container-fluid px-5">
+            <!-- <hr><hr> -->
+            <div class="sec2" style="border-bottom: 1px solid gray; border-top:1px solid gray; padding:2px; margin-top:12px;"></div>
+                <div class="sec3text">
+                    <h3 style="position: absolute; top:-15px; left: 5%; font-size: 30px; z-index: 1; width: 350px; text-align:center; background-color: white;">SHOP BY CATEGORY</h3>
+                </div>
+        </div>
+    </div>
+        <!-- ##############  sec6 ############## -->
+        <div class="sec6">
+            <div class="container">
+                <div class="sec6-image1 row">
+                    <div class="image1 col-3">
+                        <div class="imagess"><img src="./apparel-category.webp" alt=""></div>
+                        <a href="#">Apparel</a>
+                    </div>
+                    <div class="image1 col-3 ">
+                        <div class="imagess"><img src="./art-category.webp" alt=""></div>
+                        <a href="#">Art</a>
+                    </div>
+                    <div class="image1 col-3">
+                        <div class="imagess"><img src="./electronics.webp" alt=""></div>
+                        <a href="#">electronics</a>
+                    </div>
+                    <div class="image1 col-3">
+                        <div class="imagess"><img src="./food.webp" alt=""></div>
+                        <a href="#">Food & Beverages</a>
+                    </div>
+                </div>
+                <div class="sec6-image1 row">
+                    <div class="image1 col-3">
+                        <div class="imagess"><img src="./health-beauty.webp" alt=""></div>
+                        <a href="#">Health & Beauty</a>
+                    </div>
+                    <div class="image1 col-3">
+                        <div class="imagess"><img src="./health-care.webp" alt=""></div>
+                        <a href="#">Health Care</a>
+                    </div>
+                    <div class="image1 col-3">
+                        <div class="imagess"><img src="./home-garden.webp" alt=""></div>
+                        <a href="#">Home & Garden</a>
+                    </div>
+                    <div class="image1 col-3">
+                        <div class="imagess"><img src="./pet-supplies.webp" alt=""></div>
+                        <a href="#">Pet Supplies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ############## sec7 ############## -->
+        <div class="sec2 sec8-hr" style="position: relative;">
+            <div class="container-fluid px-5">
+                <!-- <hr><hr> -->
+                <div class="sec2" style="border-bottom: 1px solid gray; border-top:1px solid gray; padding:2px; margin-top:12px;"></div>
+                    <div class="sec3text">
+                        <h3 style="position: absolute; top:-15px; left: 5%; font-size: 30px; z-index: 1; width: 350px; text-align:center; background-color: white;">HOME & GARDEN</h3>
+                    </div>
+            </div>
+            </div>
+            <!-- ############## sec8 ############## -->
+            
+            <div class="container-fluid">
+                <div class="sec8">
+            <div class="row">
+                <div class="col-3" style="display: inline-block; margin-top :30px; padding:50px 5px; background-color: #d6def9;">
+                    <img src="./home-garden (1).webp" alt="">
+                    <div class="sec8-heading1" style="text-align: center; padding-top:30px;">
+                        <h2>Home & Garden</h2>
+                    </div>
+                    <div class="btn-btn-white" style="text-align: center;">
+                        <button style="border: none; padding:10px;"><a href="#" style="text-decoration: none; color: black;">Explore Now</a></button>
+                    </div>
+                </div>
+                <div class="col-9" style="margin-top: 30px;">
+                    <div class="row">
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                           <img src="./cleaning.webp" alt="">
+                           <p>Cleaning</p>
+                        </div>
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                            <img src="./chair.webp" alt="">
+                            <p>Chair</p>
+                        </div>
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                            <img src="./ornaments.webp" alt="">
+                            <p>Ornaments</p>
+                        </div>
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                            <img src="./candles.webp" alt="">
+                            <p>Candles</p>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                            <img src="./blender.webp" alt="">
+                           <p>Blender</p>
+                        </div>
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                            <img src="./light-blub.webp" alt="">
+                           <p>Light Blub</p>
+                        </div>
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                            <img src="./curtain.webp" alt="">
+                           <p>Curtain</p>
+                        </div>
+                        <div class="col-3" style="text-align: center; background-color:rgb(229, 220, 220); border: 3px solid white;">
+                            <img src="./tool-kit.webp" alt="">
+                           <p>Tool Kit</p>
+                        </div>
+                    </div>
+               
+            </div>
+        </div>
+    </div>
+            </div>
+         <!-- ############## sec7 ############## -->
+         <div class="sec2 mt-4 sec9-hr" style="position: relative;">
+            <div class="container-fluid">
+                <!-- <hr><hr> -->
+                <div class="sec2" style="border-bottom: 1px solid gray; border-top:1px solid gray; padding:2px; margin-top:12px;"></div>
+                    <div class="sec3text">
+                        <h3 style="position: absolute; top:-15px; left: 5%; font-size: 30px; z-index: 1; width: 350px; text-align:center; background-color: white;">NEW ARRIVALS</h3>
+                    </div>
+            </div>
+            </div>
+
+            <!-- ############## sec9 ############## -->
+          
+            <div class="container-fluid sec9-con" id="sec9">
+                <div class="row sec9">
+                    <div class="col col-6sec9-flex">
+                        <div class="imagesss"><img src="./luxury-menwatch.webp" alt=""></div>
+                        <h5>A Luxury Men's Watch That <br>Blends A Sporty Style With </h5>
+                        <p>Los Angeles, California 91376</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./shoes.webp" alt=""></div>
+                        <h5 style="text-align: center;">Tan/Black Leopard Suede<br>Booties </h5>
+                        <p>Los Angeles, California 90015</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./wireless-mini-earbuds-1.webp" alt=""></div>
+                        <h5>Wholesale Bluetooth 5.0<br>Wireless Mini Earbuds</h5>
+                        <p>Los Angeles, California 11237</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./cross-ring.webp" alt=""></div>
+                        <h5 style="text-align: center;">Sterling Silver Wide X Swirl<br>Cross Ring </h5>
+                        <p>Los Angeles, California 90014</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./lydiaseater-sofa-1.webp" alt=""></div>
+                        <h5 style="text-align: center;">Lydia 3 Seater Sofa In Dark Grey </h5>
+                        <p>Los Angeles, California 78703</p>
+                    </div>
+                <!-- </div>
+                <div class="row sec9"> -->
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./soccer_ball.webp" alt=""></div>
+                        <h5>Perrini Match Soccer Ball<br>Mattress Training Football </h5>
+                        <p>Los Angeles, California 90040</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./heavy-double-stitchedbelt.webp" alt=""></div>
+                        <h5 style="text-align: center;">Heavy Double Stitched Belt<br>BG8296-Brown </h5>
+                        <p>Los Angeles, California 11729</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./perrier-water-laman-1.webp" alt=""></div>
+                        <h5 style="text-align: center;">Wholesale Perrier Water 11<br>Lemon </h5>
+                        <p>Los Angeles, California 90058</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./big-brother--blue-bear.webp" alt=""></div>
+                        <h5>10 SITTING BIG BRO<br>TSHIRT BLUE BEAR </h5>
+                        <p>Los Angeles, California 30340</p>
+                    </div>
+                    <div class="col col-6 sec9-flex">
+                        <div class="imagesss"><img src="./neopreen-blue-knee-1.webp" alt=""></div>
+                        <h5>Wholesale One Size <br>Blue Knee Brace </h5>
+                        <p>Los Angeles, California 90058</p>
+                    </div>
+                </div>
+            </div>
+       
+               
+<br>
+            <div class="d-flex justify-content-end px-5 pagination1" style="position: relative;">
+                <ul class="pagination">
+                  <li class="page-item pagination1"><a class="page-link bg-white text-dark" href="#">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true" style="width: 30px; height:30px; color:black; position:absolute;bottom:0px; left:0px;"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                     
+                  </a></li>
+                  <li class="page-item pagination1"><a class="page-link bg-white text-dark" href="#">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true" style="width: 30px; height:30px; color:black; position: absolute; bottom: 0px; right:0px;"></span>
+                        <span class="visually-hidden" style="border: 1px solid black;">Next</span>
+                      </button>
+                  </a></li>
+                </ul>
+            </div>
+            <div class="sec11">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container-fluid px-5">
+                        <div class="row" style="background-color: #d6def9;">
+                            <div class="col-3 m-0 sec11-flex" style="margin-top :5px;border-radius: 5px; margin-left: 2px; height:300px; padding-top: 38px; background-color: #d6def9; box-shadow: 3px 1px 7px 0px black;">
+                                
+                                <div class="sec11-heading" style="text-align: center; padding-top: 50px;">
+                                    <h2>TRENDING ON</h2>
+                                </div>
+                                <div class="sec11-imagess" style="text-align: center;">
+                                    <img src="./amazon.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 sec11-image">
+                                <div class="row m-0">
+                                    <div class="col-4" style="padding-top:30px; padding-left:0px;">
+                                       <img src="./headphone.webp" alt="">
+                                    </div>
+                                    <div class="col-4" style="padding-top: 30px;">
+                                       <img src="./costmatics.webp" alt="">
+                                    </div>
+                                    <div class="col-4" style="padding-top: 30px;">
+                                       <img src="./box.webp" alt="">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid px-5">
+                        <div class="row" style="background-color: #d6def9;">
+                            <div class="col-3 m-0 sec11-flex" style="margin-top :5px;border-radius: 5px; margin-left: 2px; height:300px; padding-top: 38px; background-color: #d6def9; box-shadow: 3px 1px 7px 0px black;">
+                                
+                                <div class="sec11-heading" style="text-align: center; padding-top: 50px;">
+                                    <h2>TRENDING ON</h2>
+                                </div>
+                                <div class="sec11-imagess" style="text-align: center;">
+                                    <img src="./amazon.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 sec11-image">
+                                <div class="row m-0">
+                                    <div class="col-4" style="padding-top:30px; padding-left:0px;">
+                                       <img src="./headphone.webp" alt="">
+                                    </div>
+                                    <div class="col-4" style="padding-top: 30px;">
+                                       <img src="./costmatics.webp" alt="">
+                                    </div>
+                                    <div class="col-4" style="padding-top: 30px;">
+                                       <img src="./box.webp" alt="">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container-fluid px-5">
+                        <div class="row" style="background-color: #d6def9;">
+                            <div class="col-3 m-0 sec11-flex" style="margin-top :5px;border-radius: 5px; margin-left: 2px; height:300px; padding-top: 38px; background-color: #d6def9; box-shadow: 3px 1px 7px 0px black;">
+                                
+                                <div class="sec11-heading" style="text-align: center; padding-top: 50px;">
+                                    <h2>TRENDING ON</h2>
+                                </div>
+                                <div class="sec11-imagess" style="text-align: center;">
+                                    <img src="./amazon.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col-9 sec11-image">
+                                <div class="row m-0">
+                                    <div class="col-4" style="padding-top:30px; padding-left:0px;">
+                                       <img src="./headphone.webp" alt="">
+                                    </div>
+                                    <div class="col-4" style="padding-top: 30px;">
+                                       <img src="./costmatics.webp" alt="">
+                                    </div>
+                                    <div class="col-4" style="padding-top: 30px;">
+                                       <img src="./box.webp" alt="">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 30px; height:30px; "></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+              <!-- ############## FAQ  ############## -->
+              <div class="sec2 mt-4" style="position: relative;">
+                <div class="container-fluid">
+                    <!-- <hr><hr> -->
+                    <div class="sec2" style="border-bottom: 1px solid gray; border-top:1px solid gray; padding:2px; margin-top:12px;"></div>
+                        <div class="sec3text">
+                            <h3 style="position: absolute; top:-15px; left: 4%; font-size: 30px; z-index: 1; width: 517px; text-align:center; background-color: white;">FREQUENTLY ASKED QUESTIONS</h3>
+                        </div>
+                </div>
+                </div>
+              <!-- ############## Accordian ############## -->
+              <div class="accordion mt-5" id="accordionExample">
+                <div class="container">
+                <div class="accordion-item shadow p-3 mb-5 bg-body rounded">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Why Should I Sell My Products on  <img src="./SeeBiz-IMS-logo-footer.png" alt="" style="width: 80px; height:30px;" >?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item shadow p-3 mb-5 bg-body rounded">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Does it Cost Money to Use <img src="./SeeBiz-IMS-logo-footer.png" alt="" style="width: 80px; height:30px;" >?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item shadow p-3 mb-5 bg-body rounded">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Will <img src="./SeeBiz-IMS-logo-footer.png" alt="" style="width: 80px; height:30px;" > Help Manage My Inventory ?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item shadow p-3 mb-5 bg-body rounded">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How to Start a Business on <img src="./SeeBiz-IMS-logo-footer.png" alt="" style="width: 80px; height:30px;" > ?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item shadow p-3 mb-5 bg-body rounded">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Why Should I Buy Products From <img src="./SeeBiz-IMS-logo-footer.png" alt="" style="width: 80px; height:30px;" >?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+            </div>
+              </div>
+
+              <!-- ############## sec10 ############## -->
+
+              <div class="sec10 mt-4 ">
+                <div class="container-fluid px-5 sec10-slider">
+                    <div class="row ">
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-0 pl_custom">
+                        <img src="./SeeBiz-IMS-logo-footer.png" alt="" style="width: 80px; height:30px;"><br>
+                        <span>See Your Business Grow</span>
+                        <div class="para" style="font-size: 14px;">
+                            <p>SeeBiz is an online sales portal and <br>networking platform that allows<br>manufacturers, distributors,<br>wholesalers and retailers to <br>exchange goods and connect with <br>each other at one place.</p>
+
+                        </div>
+                        <div class="para1" style="font-size: 14px;">
+                            <p>By providing a social platform where <br>business can conveniently connect <br>with their desired businesses, Seebiz <br>puts an end to the hassle that comes<br>with traditional ways of doing <br>wholesale business.</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-0 pl_custom">
+                        <h3>Resources</h3>
+                        <ul style="margin-top: 30px; font-size: 17px;">
+                            <li>Blog</li>
+                            <li>Help Center</li>
+                            <li>About Us</li>
+                            <li>Terms And Conditions</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-0 pl_custom">
+                        <h3>Tutorials</h3>
+                        <ul style="margin-top: 30px; font-size: 17px;">
+                            <li>How to create account?</li>
+                            <li>How to add a vendor as contact?</li>
+                            <li>How to create and organize contact?</li>
+                            <li>How to Manage Your Products?</li>
+                            <li>How to Share Content on Newsfeed?</li>
+                        </ul>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-12 p-0 pl_custom">
+                        <h3>Contact Us</h3>
+                        <div class="sec10-iconsn d-flex">
+                            <i class="fas fa-map-marker-alt m-2"></i>
+                            <p>SeeBiz, Inc.<br>Los Angeles, CA 90007 United states</p>
+                        </div>
+                        <div class="sec10-icons d-flex">
+                            <i class="fa-solid fa-phone m-2"></i>
+                            <p>213-986-9911</p>
+                        </div>
+                        <div class="sec10-icons d-flex">
+                            <i class="fa-solid fa-message m-2"></i>
+                            <p>contact@seebiz.com</p>
+                        </div>
+                        <div class="sec10-icons" style="margin-top: 20px;">
+                        <span style="border:1px solid black; padding:15px; border-radius: 50%;"><i class="fa-brands fa-facebook-f"></i></span>
+                        <span style="border:1px solid black; padding:15px; border-radius: 50%;"><i class="fa-brands fa-twitter"></i></span>
+                        <span style="border:1px solid black; padding:15px; border-radius: 50%;"><i class="fa-brands fa-instagram"></i></span>
+                        <span style="border:1px solid black; padding:15px; border-radius: 50%;"><i class="fa-brands fa-youtube"></i></span>
+                    </div>
+                     </div>
+                    </div>
+                </div>
+              </div>
+
+              <footer style="padding-top: 20px;">
+                <hr>
+                <p style="text-align: center;">	&#169; Copyright 2022 Seebiz Inc.</p>
+              </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
